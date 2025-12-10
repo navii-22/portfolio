@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Navodi Jayawardhana</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="dark">
+
+    <!-- THEME TOGGLE -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i data-feather="moon"></i>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a href="#home">Navodi</a>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section home">
+        <div class="home-glass">
+            <div class="home-text">
+                <h1 class="fade-in">Hi, I'm <span>Navodi Jayawardhana</span></h1>
+                <p class="about-me fade-in delay-2">
+                    I’m a first-year Software Engineering undergraduate, passionate about creating intuitive and engaging web experiences.
+                    <br><strong>Interests:</strong> Web Design, UI/UX, Frontend Development, Problem Solving
+                </p>
+                <a href="cv.pdf" download><button class="btn fade-in delay-2">Download CV</button></a>
+            </div>
+            <div class="home-img fade-in delay-3">
+                <img src="dp.jpg" alt="Profile Photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+<section id="skills" class="section skills-section">
+    <h2 class="section-title">Skills</h2>
+   <div class="skills-container">
+
+    <div class="skill-circle" data-value="90">
+        <div class="circle">
+            <div class="mask full"><div class="fill"></div></div>
+            <div class="mask half"><div class="fill"></div></div>
+            <div class="inside-circle">0%</div>
+        </div>
+        <p>HTML</p>
+    </div>
+
+    <div class="skill-circle" data-value="85">
+        <div class="circle">
+            <div class="mask full"><div class="fill"></div></div>
+            <div class="mask half"><div class="fill"></div></div>
+            <div class="inside-circle">0%</div>
+        </div>
+        <p>CSS</p>
+    </div>
+
+    <div class="skill-circle" data-value="70">
+        <div class="circle">
+            <div class="mask full"><div class="fill"></div></div>
+            <div class="mask half"><div class="fill"></div></div>
+            <div class="inside-circle">0%</div>
+        </div>
+        <p>JavaScript</p>
+    </div>
+
+    <div class="skill-circle" data-value="65">
+        <div class="circle">
+            <div class="mask full"><div class="fill"></div></div>
+            <div class="mask half"><div class="fill"></div></div>
+            <div class="inside-circle">0%</div>
+        </div>
+        <p>C++</p>
+    </div>
+
+</div>
+
+</section>
+
+      
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card fade-in delay-1">
+                <img src="todoscreenshot.jpg" alt="ToDo App">
+                <h3>ToDo List Web App</h3>
+                <p>A simple ToDo app with local storage, allowing users to add, edit, and delete tasks in a clean UI.</p>
+            </div>
+            <div class="project-card fade-in delay-2">
+                <img src="calscreen.jpg" alt="Calculator App">
+                <h3>Calculator App</h3>
+                <p>A web-based calculator that performs all basic arithmetic operations with a clean interface.</p>
+            </div>
+            <div class="project-card fade-in delay-3">
+                <img src="whetherscreen.jpg" alt="Weather App">
+                <h3>Weather App</h3>
+                <p>Fetches real-time weather data from an API and displays it in a responsive, clean design.</p>
+            </div>
+            <div class="project-card fade-in delay-4">
+                <img src="smartdusbin.jpg" alt="Smart Waste Segregation System">
+                <h3>Smart Waste Segregation System</h3>
+                <p>Designed a system using Arduino and sensors to detect and sort waste automatically.</p>
+                <p><strong>Technologies:</strong> Arduino, Ultrasonic Sensor, Servo Motor</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="cert-timeline-section">
+        <h2 class="section-title">Certificates</h2>
+
+        <div class="timeline">
+            <div class="timeline-item left fade-in">
+                <div class="timeline-content">
+                    <h3>CCNA</h3>
+                    <img src="CCNA.png" alt="CCNA Certificate">
+                </div>
+            </div>
+
+            <div class="timeline-item right fade-in delay-1">
+                <div class="timeline-content">
+                    <h3>Web Development (HTML & CSS)</h3>
+                    <img src="HTML CSS.png" alt="HTML CSS Certificate">
+                </div>
+            </div>
+
+            <div class="timeline-item left fade-in delay-2">
+                <div class="timeline-content">
+                    <h3>Introduction to AWS Cloud</h3>
+                    <img src="AWS cloud.png" alt="AWS Certificate">
+                </div>
+            </div>
+
+            <div class="timeline-item right fade-in delay-3">
+                <div class="timeline-content">
+                    <h3>Google UX Design</h3>
+                    <img src="google UX.png" alt="Google UX Certificate">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Zoom Overlay -->
+    <div id="certZoomOverlay" class="cert-zoom-overlay" aria-hidden="true">
+        <div id="certZoomClose" class="cert-zoom-close">&times;</div>
+        <img id="certZoomImg" src="" alt="Certificate preview">
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-message">
+            I'm always excited to connect! Whether you have a project idea, a collaboration opportunity, or just want to say hi, feel free to reach out.  
+            Here’s how you can contact me:
+        </p>
+
+        <div class="contact-container">
+            <a href="mailto:kaushika@gmail.com">
+                <div class="contact-box">
+                    <i data-feather="mail"></i>
+                    <p>kaushika@gmail.com</p>
+                </div>
+            </a>
+
+            <a href="tel:+94710000000">
+                <div class="contact-box">
+                    <i data-feather="phone"></i>
+                    <p>+94 71 000 0000</p>
+                </div>
+            </a>
+
+            <a href="https://goo.gl/maps/XXXX" target="_blank">
+                <div class="contact-box">
+                    <i data-feather="map-pin"></i>
+                    <p>Colombo, Sri Lanka</p>
+                </div>
+            </a>
+        </div>
+
+        <form class="contact-form" action="mailto:kaushika@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+
+</body>
+</html>
